@@ -1,0 +1,17 @@
+syntax = "proto3";
+option go_package ="calcpb";
+option csharp_namespace = "Demo.CalcPb";
+
+message AddRequest{
+    int32 no1 = 1;
+    int32 no2 = 2;
+}
+
+message AddResponse{
+    int32 result = 1;
+}
+
+service CalculatorService{
+    rpc Add (AddRequest) returns (AddResponse);
+}
+
