@@ -12,6 +12,6 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <Protobuf Include="**/*.proto" OutputDir="%(RelativePath)" GrpcServices="client"  />
+    <Protobuf Include="**/*.proto" OutputDir="%(RelativePath)pbs" GrpcOutputDir="%(RelativePath)pbs" GrpcServices="client"  />
   </ItemGroup>
 </Project>
